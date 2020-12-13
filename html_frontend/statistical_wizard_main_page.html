@@ -1,0 +1,393 @@
+<html>
+
+<Head>
+
+<Title> Statistics Wizard for Research </Title>
+
+
+<link rel="stylesheet" href="load.css" >
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  line-height:2;
+}
+
+
+.tablink {
+  background-color: white;
+  color: black;
+  float: left;
+  border: display;
+  outline: display;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 15px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #B0DFE5;
+}
+
+
+.tabcontent {
+  color: white;
+  display: none;
+  margin: 80px 20px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#FormulaGuide {background-color: white;}
+#Statistical Wizard {background-color: white;}
+#Calculator {background-color: white;}
+
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+tr:hover {background-color: #D6EAF8;}
+
+#background-wrapper {
+min-height: 100vh;
+background-image: url("b1.jpg") !important;
+background-position: center;
+background-size: 900px 300px; 
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: black !important;
+
+}
+
+.footer {
+   position: fixed;
+   left: 10;
+   bottom: 10;
+   width: 100%;
+   height: 5%;
+   background-color: white;
+   color: black;
+   text-align: left;
+   line-height: 10px;
+   font: 4;
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="loader" style="z-index:999; display:block;background-color:#4682b4;height:100%;width:100%;color:white;font-size:100px;">
+<p><center><font size="20">STATISTICS FOR SOCIAL SCIENCES WELCOMES YOU!</font><center></p>
+	
+		<div class="loading">
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+			<div class = "obj"> </div>
+		</div>
+
+
+</div>
+
+<div id="main" style="display:none;">
+<div class="sticky-top py-3" style="background: white !important;">
+<div style="color: steelblue; font-family: Arial">
+<FONT SIZE=3>
+
+<Center> <H1 style="color: steelblue;"> Statistics for Social Sciences </H1> </Center>
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'silver')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('FormulaGuide', this, 'silver')">Formula Guide</button>
+<button class="tablink" onclick="openPage('StatisticalWizard', this, 'silver')">Statistical Wizard</button>
+<button class="tablink" onclick="openPage('Calculator', this, 'silver')">Calculator</button>
+</div>
+
+<div id="Home" class="tabcontent">
+<div id="background-wrapper">
+<U> <h3> <font color = "Black" > What is Statistics?</font> </h3> </U> 
+<font color = "Black"><P> Statistics is a tool which is used by almost everybody practicing science and social studiesat various levels. 
+According to the students at UG and PG levels, choosing statistical tools and conducting necessary testson their data 
+available is the biggest challenge they face. Blindly inserting data for random popular statistical tests like 
+'T test' and 'F Test' 
+estimates and values and hence make ones's study reliable and vague conclusions are drawn based on that. 
+The proposed idea of a website for Social Science Statistics aims to help people with no statistical background, choose and conduct 
+right statistical tests for not only to guide them with their data but also provide guidelines with the help of examples to for the
+better the understanding of the mathematics behind the values.</P> </Font>
+<!-- <Center> <img src="b.jpg", width="500", border="0", height="300"> </Center> -->
+
+<br>
+
+<U> <h3> <font color = "Black"> What do we do? </font> </h3> </U> 
+<UL>
+<font color = "Black">
+<Li> <B> Formula Guide: </B>  The diagrammatic representation of the statistical tests which is populary used in Social Sciences will guide you better. </Li> 
+<Li> <B> Statistical Wizard: </B> This tab will help you to choose a statistical test in case you don't know which one is most suitable for your data. </Li>
+<Li> <B> Calculator: </B> Perform your statistical tests here. </Li> 
+</font>
+</UL> 
+</div>
+</div>
+
+<div id="FormulaGuide" class="tabcontent">
+
+<center> <table border  = 1> 
+<tr> 
+<td colspan = "3" align = "center" bgcolor = "#E5E7E9"> <b> UNDERSTANDING FORMULAE FOR COMMON STATISTICS </b> </td>
+</tr>
+
+<th> <b> <font color = "Black"> Statistic </b> </font> </th>
+<th> <b> <font color = "Black"> Formula </b> </font> </th> 
+<th> <b> <font color = "Black"> When to Use </b> </font> </th> 
+ 
+<tr> 
+ <td> Sample Mean (Average)</td> 
+ <td> x&#772 = ∑x/n </td>
+ <td> Measure of centre; affected by the outliners</td>
+</tr> 
+ 
+<tr> 
+ <td> Median </td> 
+ <td> n = odd; middle value of the ordered data <br> n = even; average of the two middle values </td>
+ <td> Measure of centre; not affected bu the outliners</td>
+</tr> 
+ 
+<tr> 
+ <td> Sample Standard Deviation </td> 
+ <td> s = √((∑(x- x&#772)<sup>2</sup>)/(n-1)) </td>
+ <td> Measure of variation; "average" distance from the mean</td>
+</tr> 
+ 
+<tr> 
+ <td> Correlation Coefficient </td> 
+ <td> r = 1/(n-1)  ∑((x- x&#772)(y- y&#772)   )/(s<sub>x</sub> s<sub>y</sub> ) </td>
+ <td> Strength and direction of linear relationship between X and Y</td>
+ </tr> 
+ 
+</table>  
+</center>
+<br> 
+
+<center> <table border = 1> 
+<tr> 
+<td colspan = "5" align = "center" bgcolor = "#E5E7E9"> <b> HANDLING STATISTICAL HYPOTHESIS TESTS </b> </td>
+</tr>
+
+<th> <b> <font color = "Black"> Test for </b> </font> </th> 
+<th> <b> <font color = "Black"> Null Hypothesis </b> </font> </th> 
+<th> <b> <font color = "Black"> Test Statistic </b> </font> </th> 
+<th> <b> <font color = "Black"> Distribution </b> </font> </th> 
+<th> <b> <font color = "Black"> When to Use </b> </font> </th> 
+
+<tr> 
+ <td> Population Mean </td> 
+ <td> μ = μ<sub>0</sub></td>
+ <td> x&#772- μ<sub>0</sub>/(σ/√n) </td>
+ <td> Z </td>
+ <td> Normal distribution or n > 30; σ known </td> 
+</tr>
+
+<tr> 
+ <td> Population Mean </td> 
+ <td> μ = μ<sub>0</sub> </td>
+ <td> x&#772- μ<sub>0</sub>/(s/√n) </td>
+ <td> t<sub>(n - 1)</sub> </td>
+ <td> N < 30; and/or σ unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Population Proportion (p) </td> 
+ <td> p = p<sub>0</sub> </td>
+ <td> (p&#770- p<sub>0</sub>)/√((p<sub>0</sub> ( 1- p<sub>0</sub> ))/n) </td>
+ <td> Z </td>
+ <td> np&#772,n(1-p&#772) ≥ 10 </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two means </td> 
+ <td> μ<sub>1</sub> - μ<sub>2</sub> = 0 </td>
+ <td> (x&#772 <sub>1</sub> - x&#772 <sub>2</sub>)/(√(σ<sub>1</sub> <sup>2</sup>/n<sub>1</sub>) + (σ<sub>2</sub> <sup>2</sup>/n<sub>2</sub>))</td>
+ <td> Z </td>
+ <td> Both normal distribution or n<sub>1</sub>, n<sub>2</sub> > 30; σ<sub>1</sub>, σ<sub>2</sub> unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two means </td> 
+ <td> μ<sub>1</sub> - μ<sub>2</sub> = 0 </td>
+ <td> (x&#772 <sub>1</sub> - x&#772 <sub>2</sub>)/(√(s<sub>1</sub> <sup>2</sup>/n<sub>1</sub>) + (s<sub>2</sub> <sup>2</sup>/n<sub>2</sub>)) </td>
+ <td> t distribution with df = the smaller of (n<sub>1</sub> - 1) and n<sub>2</sub> - 1) </td>
+ <td> n<sub>1</sub>, n<sub>2</sub> < 30; σ<sub>2</sub> unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Mean difference (paired data) </td> 
+ <td> μ<sub>0</sub> = 0 </td>
+ <td> d&#772- μ<sub>d</sub>/(s<sub>d</sub>/√n)</td>
+ <td> t<sub>(n - 1)</sub></td>
+ <td> n < 30 pairs of data and or σ<sub>d</sub> unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two proportions </td> 
+ <td> p<sub>1</sub> - p<sub>2</sub> = 0 </td>
+ <td> (p&#770 <sub>1</sub> - p&#770 <sub>2</sub>)/(√(p&#770(1 - p&#770) (1/n<sub>2</sub> + 1/n<sub>1<sub>) </td>
+ <td> Z </td>
+ <td> np&#772,n(1-p&#772) ≥ 10 for each group </tr> 
+</tr>
+</table>
+</center>
+<br> 
+
+<center> <table border = 1>
+<tr> 
+<td colspan = "4" align = "center" bgcolor = "#E5E7E9"> <b> SURVEYING STATISTICAL CONFIDENCE INTERVALS </b> </font> </td>
+</tr>
+
+<th> <font color = "Black"> Confidence Interval </font> </th>
+<th> <font color = "Black"> Sample Statistic </font> </th>
+<th> <font color = "Black"> Margin of Error </font> </th>
+<th> <font color = "Black"> When to Use </font> </th> 
+
+<tr> 
+ <td> Population Mean (μ) </td> 
+ <td> x&#772 </td>
+ <td> z(σ/√n) </td>
+ <td> X is normal, or n ≥ 30; σ is known </tr> 
+</tr>
+
+<tr> 
+ <td> Population Mean (μ) </td> 
+ <td> x&#772 </td>
+ <td> t<sub>(n - 1)</sub> s(σ/√n) </td>
+ <td> n < 30; and/or σ is unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Population Proportion (p) </td> 
+ <td> p&#770 </td>
+ <td> z(√ρ&#770(1-ρ&#770)/n)) </td>
+ <td> np&#770,n(1-p&#770) ≥ 10 </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two Population Means (μ<sub>1</sub> - μ<sub>2</sub>) </td> 
+ <td> x<sub>1</sub> - x<sub>2</sub> </td>
+ <td> z(√(σ<sub>1</sub> <sup>2</sup>/n<sub>1</sub>)+(σ<sub>2</sub> <sup>2</sup>/n<sub>2</sub>)/n </td>
+ <td> Both normal distribution or n<sub>1</sub>, n<sub>2</sub> ≥ 30; σ<sub>1</sub>, σ<sub>2</sub> known </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two Proportions (μ<sub>1</sub> - μ<sub>2</sub>) </td> 
+ <td> x<sub>1</sub> - x<sub>2</sub> </td>
+ <td> t<sub>n<sub>1</sub> + n<sub>2</sub> - 2</sub>(√((n<sub>1</sub> - 1)s<sub>1</sub> <sup>2</sup> + (n<sub>2</sub> - 1)s<sub>2</sub> <sup>2</sup>/n<sub>1</sub> + n<sub>2</sub> - 2)</td>
+ <td> n<sub>1</sub>, n<sub>2</sub> < 30; and/or σ<sub>1</sub> = σ<sub>2</sub> unknown </tr> 
+</tr>
+
+<tr> 
+ <td> Difference between two Proportions (p<sub>1</sub> - p<sub>2</sub>) </td> 
+ <td> p&#770 <sub>1</sub> - p&#770 <sub>2</sub> </td>
+ <td> z(√(p&#770 <sub>1</sub>(1 - p&#770 <sub>1</sub>)/n<sub>1</sub> + (p&#770 <sub>2</sub>(1 - p&#770 <sub>2</sub>)/n<sub>2</sub> </td>
+ <td> np&#772,n(1-p&#772) ≥ 10 for each group </tr> 
+</tr>
+
+<tr> 
+  <td colspan = "4" align = "center"> </td>
+</tr>  
+
+</table>
+</center>
+</div>
+<div>
+
+<div class ="footer">
+  <center> <p>&#169 <b> Prithul Chaturvedi</p> </center>
+</div>
+
+</div>
+
+<div id="StatisticalWizard" class="tabcontent">
+<h3> <font color = "Black">Answer out a few questions and we will recommend you the most suitable test.</h3> </font>
+<p> Please fill up the questionaire by clicking on the link below to know more about your data. </p>
+    <I><font color = "Black"> <p>Please note that this statistical wizard is designed to select between statistics tests that you would commonly find being used in the context of undergraduate studies in the social and behavioural sciences. If you are a professional researcher, doing experimental work, then we suggest you to seek a statistics professional’s help for testing procedures.</p> <Br> </font> </I>
+
+<a href="dropdown.html" target = "_blank"><button>Click here to know about your test</button></a>
+
+</div>
+
+<div id="Calculator" class="tabcontent">
+    <h3><font face = "Arial", color = "Black"> <p> <b> Please click on the links below to access the required calculator in order to obtain the result. </b> </p> <Br> </font></h3>
+<ul>
+<li> <a href="https://prithulchaturvedi.shinyapps.io/1samp_t/" target = "_blank">One Sample T-Test</a> <li>
+<li> <a href="https://prithulchaturvedi.shinyapps.io/2samp_t/" target = "_blank">Two Sample T-Test (Independent/Paired)</a> <li>
+<li> <a href="https://snapchaturvedi.shinyapps.io/chi_sq/"> Chi-Sq Test</a> <li>
+<li> <a href="https://snapchaturvedi.shinyapps.io/correl_test/" target = "_blank">Correlation Test (Spearman's Rho/Pearson's r)</a> <li>
+<li> <a href="https://prithulchaturvedi.shinyapps.io/signed_rank/" target = "_blank">Wilcoxon Signed-Rank Test</a> <li>
+<li> <a href="https://prithulchaturvedi.shinyapps.io/utest/" target = "_blank">Mann Whitney U-Test</a> <li>
+<li> <a href="https://prithulchaturvedi.shinyapps.io/z_test/" target = "_blank">Z-Test</a> <li>
+<li> <a href="https://snapchaturvedi.shinyapps.io/one_way_anova/" target = "_blank">One-way ANOVA</a> <li>
+<li> <a href="https://snapchaturvedi.shinyapps.io/two_way_anova/" target = "_blank">Two-way ANOVA</a> <li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<script>
+window.onload=function()
+{
+	
+}
+
+
+setTimeout(function(){
+
+	document.getElementById("loader").style.display="none";
+	document.getElementById("main").style.display="block";
+
+},2500);
+
+
+
+</script>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script> 
+
+</body>
+
+</html> 

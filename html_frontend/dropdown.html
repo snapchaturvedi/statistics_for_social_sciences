@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  /*background-image: url('abb.png');*/
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+<body>
+   <Center> <H1 style="color: steelblue;"> Statistics for Social Sciences </H1> </Center>
+<div class="container">
+  
+    <p><font color = "white">.</font></p>
+  <h4><b>This wizard will ask you a few questions, and then based on your answers, will recommend a statistics test.</b></h4>
+
+Please note that this wizard is designed to select between statistics tests that you would commonly find being used in the context of undergraduate studies in the social and behavioral sciences.</p>                                        
+  <p><b>NOTE</b>: If you're a professional researcher, working on your thesis, you should really consult a statistician primarily.</p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Level of Measurement 
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="*">Nominal<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a class="test" href="*">One Nominal Variable <span class="caret"></span></a>
+
+            <ul class="dropdown-menu">
+              <li><a href=" https://snapchaturvedi.shinyapps.io/chi_sq/">Chi-Squared Test for goodness of fit</a></li>
+
+            </ul>
+
+            <a class="test" href="*">More than one Nominal Variable <span class="caret"></span></a>
+              
+              <ul class="dropdown-menu">
+              <li><a href=" https://snapchaturvedi.shinyapps.io/chi_sq/">Chi-Squared Test for independence</a></li>
+
+            </ul>
+
+
+          </li>
+        </ul>
+
+        <a class="test" tabindex="-1" href="#"> Ordinal <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+		<li class="dropdown-submenu">
+            <a class="test">Relationship Between Variables <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/correl_test/">Spreaman's Rho</a>
+              </li>
+              </ul>
+			<a class="test">Differences between populations <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Independent Measures <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href=" https://prithulchaturvedi.shinyapps.io/utest/">Mann-Whitney U Test </a>
+              </li>
+              </ul>
+              
+               <a class="test" >Repeated Measures <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href=" https://prithulchaturvedi.shinyapps.io/signed_rank/">Wilcoxon-Signed Rank Test </a>
+              </li>
+              </ul>
+              </ul>
+        </ul>
+
+
+        <a class="test" tabindex="-1" href="#"> Scale/Ratio <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+		<li class="dropdown-submenu">
+            <a class="test">Relationship Between Variables <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/correl_test/">Pearson's R</a>
+            </li>
+            </ul>
+			<a class="test">Differences between Populations <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Single Sample <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Standard Deviation is Known <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://prithulchaturvedi.shinyapps.io/z_test/">Z Test </a>
+              </li>
+              </ul>
+			<a class="test">Standard Deviation is Unknown <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href=" https://prithulchaturvedi.shinyapps.io/1samp_t/">T Test <a>
+              </li>
+              </ul>
+			  </ul>
+			<a class="test">More than One Sample <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Independent Measures <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Two Samples <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href=" https://prithulchaturvedi.shinyapps.io/2samp_t/">Two sample T Test</a>
+              </li>
+              </ul>
+			<a class="test">More than 2 samples <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">One Independent Variable <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/one_way_anova/">One-Way ANOVA</a>
+              </li>
+              </ul>
+			<a class="test">More than One Independent Variable <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/two_way_anova/">Two-Way ANOVA</a>
+              </li>
+              </ul>
+			  </ul>
+			  </ul>
+			<a class="test">Repeated Measures <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a class="test">Two Treatment Conditions <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/1samp_t/">T Test</a>
+              </li>
+              </ul>
+			<a class="test">More than 2 Treatment Conditions<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+              <a href="https://snapchaturvedi.shinyapps.io/one_way_anova/">One Way Repeated Measures ANOVA</a>
+				
+        </ul>
+              </li>
+              </ul>
+				</ul>
+				</li>
+				</ul>
+				</li>
+		</ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>
+
