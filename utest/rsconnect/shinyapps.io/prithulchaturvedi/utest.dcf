@@ -1,0 +1,12 @@
+name: utest
+title: utest
+username:
+account: prithulchaturvedi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3392352
+bundleId: 3979343
+url: https://prithulchaturvedi.shinyapps.io/utest/
+when: 1607782247.37644
+asMultiple: FALSE
+asStatic: FALSE

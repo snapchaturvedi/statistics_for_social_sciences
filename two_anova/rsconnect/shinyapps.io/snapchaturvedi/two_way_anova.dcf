@@ -1,0 +1,12 @@
+name: two_way_anova
+title: two_way_anova
+username:
+account: snapchaturvedi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3392540
+bundleId: 3979501
+url: https://snapchaturvedi.shinyapps.io/two_way_anova/
+when: 1607786147.61223
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+name: chi_sq
+title: chi_sq
+username:
+account: snapchaturvedi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3392412
+bundleId: 3979387
+url: https://snapchaturvedi.shinyapps.io/chi_sq/
+when: 1607783481.232
+asMultiple: FALSE
+asStatic: FALSE

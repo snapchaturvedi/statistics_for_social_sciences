@@ -1,0 +1,12 @@
+name: z_test
+title: z_test
+username:
+account: prithulchaturvedi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3392336
+bundleId: 3979329
+url: https://prithulchaturvedi.shinyapps.io/z_test/
+when: 1607782000.56948
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,12 @@
+name: one_way_anova
+title: one_way_anova
+username:
+account: snapchaturvedi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3392420
+bundleId: 3979394
+url: https://snapchaturvedi.shinyapps.io/one_way_anova/
+when: 1607783655.76266
+asMultiple: FALSE
+asStatic: FALSE
